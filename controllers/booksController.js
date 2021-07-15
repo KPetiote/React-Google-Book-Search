@@ -1,4 +1,4 @@
-// BOOK CONTROLLER JS
+// BOOKS CONTROLLER JS
 // ---------------------------------------------------------------------------
 
 const db = require("../models");
