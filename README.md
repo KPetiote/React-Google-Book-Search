@@ -22,7 +22,7 @@ Upon first loading the program, the end-user will be shown a database of random 
 User should be able to sort employee by first or last name and new random employees wil display each reload.
 
 ## Demo
-![Alt text](./public/images/react-google-book-search.gif "React-Google-Book-Search")
+![Alt text](client/src/utils/images/react-google-book-search.gif "React-Google-Book-Search")
 
 ## Program Installation
 To use this program we will need to install Node.js & React.\
@@ -54,7 +54,6 @@ The program will then initialize and function as shown in the demo.
 - [Axios](https://www.npmjs.com/package/axios)
 - [Bootstrap](https://getbootstrap.com/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [FontAwesome](https://fontawesome.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Javascript](https://www.javascript.com/)
 - [Node.js](https://nodejs.org/en/about/)
