@@ -61,7 +61,7 @@ The program will then initialize and function as shown in the demo.
 
 ## Links
 - [Github Repository URL](https://github.com/Kpetiote/React-Google-Book-Search)
-- [Hero Live Site](https://kenpet-react-google-booksearch.herokuapp.com/)
+- [Heroku Live Site](https://kenpet-react-google-booksearch.herokuapp.com/)
 ## Contribution
 None
 
