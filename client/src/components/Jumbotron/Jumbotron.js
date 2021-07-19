@@ -2,15 +2,15 @@
 // ---------------------------------------------------------------------------
 
 import React from 'react';
+import "./style.css";
 
 function Jumbotron() {
     return (
         <div>
             <div className="jumbotron">
-                <h1 className="display-4 text-center">Google Book Search</h1>
+                <h1 className="display-4 text-center jumbotronText">Google Book Search</h1>
                 <br></br>
-                <p className="text-center">Use the search field below to find books from out database.</p>
-                <p className="text-center">You have the option to save the books to read at a later date.</p>
+                <h2 className="text-center jumbotronText">Search and save books of your interest.</h2>
             </div>
         </div>
     )

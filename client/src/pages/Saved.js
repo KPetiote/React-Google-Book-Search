@@ -19,10 +19,10 @@ class Saved extends Component {
     }
 
     deleteGoogleBook = currentBook => {
-        API.deleteGoogleBook( currentBook.id )
+        API.deleteBook( currentBook.id )
         .then(res => {
             console.log("You have deleted this book:", res);
-            this.viewSavedGoogleBooks();
+            this.getBooks();
         })
         .catch(err => {
             console.log("This is the error", err);
@@ -30,7 +30,7 @@ class Saved extends Component {
     }
 
     getBooks = () => {
-        API.viewSavedGoogleBooks()
+        API.getBooks()
         .then(res => {
             this.setState({
                 savedBooks: res.data
@@ -56,7 +56,7 @@ class Saved extends Component {
                     >
                     </SavedCard>
                 ) : (
-                    <h5>No saved books</h5>
+                    <h5>No books saved yet...</h5>
                 )}
                 </Container>
             </div>

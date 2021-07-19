@@ -1,29 +1,28 @@
 // API JS
 // ---------------------------------------------------------------------------
 
-// Required module
 import axios from "axios";
-const GOOGLEURL = "https://www.googleapis.com/books/v1/volumes?q=";
+const GOOGLEURL = "https://www.googleapis.com/books/v1/volumes?q="
 
 export default {
     // Retrieve Google books
-    getGoogleBooks: function(query) {
+    googleBooks: function(query) {
         return axios.get(GOOGLEURL + query)
     },
     // Saves book to DB
-    saveGoogleBook: function(bookData) {
+    saveBook: function(bookData) {
         return axios.post("/api/books", bookData);
     },
-    // View book with the given ID
-    viewSingleGoogleBook: function(id) {
-        return axios.get("/api/books/" + id);
-    },
-    // View all saved books from DB
-    viewSavedGoogleBooks: function() {
+    // Gets saved books from DB
+    getBooks: function() {
         return axios.get("/api/books");
     },
+    // Gets book with the given ID
+    getBook: function(id) {
+        return axios.get("/api/books/" + id);
+    },
     // Deletes book with the given ID
-    deleteGoogleBook: function(id) {
+    deleteBook: function(id) {
         return axios.delete("/api/books/" + id);
     }
 };

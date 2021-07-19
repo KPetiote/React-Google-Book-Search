@@ -2,6 +2,7 @@
 // ---------------------------------------------------------------------------
 
 import React from 'react';
+import "./style.css";
 import {Link} from "react-router-dom";
 
 function Nav() {
@@ -9,7 +10,7 @@ function Nav() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <Link className="navbar-brand" to="/">React Google Book Search</Link>
+                <Link className="navbar-brand" to="/">Google Book Search</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

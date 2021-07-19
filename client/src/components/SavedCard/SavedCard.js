@@ -2,7 +2,7 @@
 // ---------------------------------------------------------------------------
 
 import React, { Component } from 'react';
-import SavedCardItem from "../SavedListItem/SavedCardItem";
+import SavedCardItem from "../SavedCardItem/SavedCardItem";
 
 class ResultCard extends Component {
 

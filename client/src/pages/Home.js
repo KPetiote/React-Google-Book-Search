@@ -18,7 +18,7 @@ class Home extends Component {
 
     // Search function for books through Google API
     searchBooks = () => {
-        API.getGoogleBooks(this.state.search)
+        API.googleBooks(this.state.search)
             .then(res => {
                 console.log("This is res.data", res.data.items)
                 this.setState({
@@ -45,7 +45,7 @@ class Home extends Component {
 
     saveGoogleBook = currentBook => {
         console.log("This is the current book", currentBook);
-        API.saveGoogleBook({
+        API.saveBook({
             id: currentBook.id,
             title: currentBook.title,
             authors: currentBook.authors,
@@ -69,7 +69,7 @@ class Home extends Component {
                         value={this.state.search}
                         onChange={this.handleInputChange}
                         name="search"
-                        placeholder="e.g. J. K. Rowling"
+                        placeholder="e.g. Harry Potter"
                     />
                     <SubmitBtn onClick={this.handleFormSubmit}/>
                 </form>
