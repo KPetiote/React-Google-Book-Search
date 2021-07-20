@@ -18,11 +18,13 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/ReactGoogleBookSearch";
 
 mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useFindAndModify: false,
   useUnifiedTopology: true,
-  useNewUrlParser: true
+  useCreateIndex: true
 });
 
 app.listen(PORT, () => {
