@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Saved from "./pages/Saved";
+import Login from '../src/components/Login/Login';
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/saved" component={Saved} />
+                    <Route exact path="/login" component={Login} />
                 </Switch>
             </div>
             </Router>
